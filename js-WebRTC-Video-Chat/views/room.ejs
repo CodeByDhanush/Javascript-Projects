@@ -6,6 +6,7 @@
     <script>
         const ROOM_ID = "<%= roomId %>"
     </script>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js" defer></script>
     <script src="/socket.io/socket.io.js" defer></script>
     <script src="script.js" defer></script>
     <title>WebRTC-Video</title>
@@ -19,11 +20,11 @@
 
     video {
         width: 100%;
-        height: 200%;
+        height: 100%;
         object-fit: cover;
     }
 </style>
 <body>
-    <div id="Video-grid"></div>
+    <div id="video-grid"></div>
 </body>
 </html>
